@@ -23,7 +23,7 @@ class ReviewsController < ApplicationController
     @review.user_id = current_user.id
 
     if @review.save
-      redirect_to @movie
+      redirect_to @review
     else
       render 'new'
     end
